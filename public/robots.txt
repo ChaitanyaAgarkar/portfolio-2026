@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://agarkar-chaieeetanyas-portfolio-2026.vercel.app/sitemap.xml
+Sitemap: https://chaieeetanya.me/sitemap.xml
 

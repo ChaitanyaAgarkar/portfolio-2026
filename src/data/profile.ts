@@ -1,7 +1,8 @@
 export const SITE_CONFIG = {
-  siteUrl:
+  siteUrl: (
     (import.meta.env.VITE_SITE_URL as string | undefined) ||
-    'https://agarkar-chaieeetanyas-portfolio-2026.vercel.app',
+    'https://chaieeetanya.me'
+  ).replace(/\/+$/, ''),
   contactEndpoint: (import.meta.env.VITE_CONTACT_ENDPOINT as string | undefined) || '',
   leetcodeApiUrl:
     (import.meta.env.VITE_LEETCODE_API_URL as string | undefined) ||

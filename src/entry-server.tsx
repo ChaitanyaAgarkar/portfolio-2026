@@ -38,6 +38,7 @@ export function renderRoute(url: string): { html: string; head: string } {
     `<title>${escapeAttr(meta.title)}</title>`,
     `<meta name="description" content="${escapeAttr(meta.description)}" />`,
     `<link rel="canonical" href="${escapeAttr(canonical)}" />`,
+    `<meta property="og:site_name" content="${escapeAttr('<Chaieeetanya/> — Chaitanya Agarkar')}" />`,
     `<meta property="og:type" content="${escapeAttr(meta.ogType ?? 'website')}" />`,
     `<meta property="og:title" content="${escapeAttr(meta.title)}" />`,
     `<meta property="og:description" content="${escapeAttr(meta.description)}" />`,

@@ -37,6 +37,7 @@ export function SeoHead({ pathname }: SeoHeadProps) {
     upsertMeta('name', 'description', meta.description);
     upsertCanonical(canonicalUrl);
 
+    upsertMeta('property', 'og:site_name', '<Chaieeetanya/> — Chaitanya Agarkar');
     upsertMeta('property', 'og:type', meta.ogType ?? 'website');
     upsertMeta('property', 'og:title', meta.title);
     upsertMeta('property', 'og:description', meta.description);
