@@ -1,0 +1,61 @@
+@keyframes pulse-node {
+  0%,
+  100% {
+    opacity: 0.45;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.18);
+  }
+}
+
+@keyframes packet-travel {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(350%);
+    opacity: 0;
+  }
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes dash-flow {
+  to {
+    stroke-dashoffset: -32;
+  }
+}
+
+.animate-pulse-node {
+  animation: pulse-node 2.8s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+.animate-packet {
+  animation: packet-travel 2.4s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+.animate-spin-slow {
+  animation: spin-slow 24s linear infinite;
+}
+
+.animate-dash-flow {
+  stroke-dasharray: 6 10;
+  animation: dash-flow 1.8s linear infinite;
+}
+
